@@ -2,14 +2,10 @@
 
 class BddConnect{
 
-    function __construct()
-    {
-        
-    }
+    
+    static function connexion(){
 
-    public function connexion(){
-
-        $bdd = new PDO('mysql:host=localhost;dbname=chocoblast', 'root','', 
+        return new PDO('mysql:host=localhost;dbname=chocoblast', 'root','', 
         array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     }
