@@ -1,0 +1,29 @@
+body{
+    color: rgba(0, 0, 0, 0.151);
+    background-image: url(/asset/images/error404.png);
+}
+
+.back-button {
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    top: 88%;
+    transform: translate(-50%, -50%);
+    font: bold 20px Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    animation: glitch 2s linear infinite;
+    box-shadow: 25px 19px 10px -3px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 25px 19px 10px -3px rgba(0, 0, 0, 0.5);
+    border: solid 1px grey;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+

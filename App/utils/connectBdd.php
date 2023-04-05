@@ -1,11 +1,10 @@
 <?php
 
-include'./App/Utils'; 
 
 class BddConnect{
 
     
-    public function connexion(){
+    public static function connexion(){
 
         //import du fichier de configuration
         include './env.php';

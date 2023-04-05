@@ -1,7 +1,5 @@
 <?php
-include '.App/model/utilisateur.php'; 
-include './App/utils/connectBdd.php'; 
-include './App/view/view_add_user.php';
+
 
 $message = "message d'information";
 
@@ -24,5 +22,7 @@ if(isset($_POST['submit'])){
     }
 
 }
+
+include './App/view/view_add_user.php';
 
 ?>

@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> Erreur 404 </h1>
-</body>
-</html>
+<?php
+
+
+$message = "message d'information";
+
+//tester si le formulaire est submit
+if(isset($_POST['submit'])){
+    //tester si les champs sont remplis
+    if(!empty($_POST['nom_utilisateur']) AND !empty($_POST['prenom_utilisateur']) AND
+    !empty($_POST['mail_utilisateur'])AND !empty($_POST['image_utilisateur']) AND !empty($_POST['password_utilisateur'])){
+        //nettoyage nom via function
+        $nom_utilisateur = Fonction::cleandata($_POST['nom_utilisateur']);
+        //stocker le contenu du formulaire
+        $nom = $_POST['nom_utilisateur'];
+        $prenom = $_POST['prenom_utilisateur'];
+        $mail = $_POST['mail_utilisateur'];
+        $image = $_POST['image_utilisateur'];
+        $password = $_POST['password_utilisateur'];
+    }
+    else{
+        'Erreur formulaire.'; 
+    }
+
+}
+
+include './App/view/view_error_404.php';
+
+?>

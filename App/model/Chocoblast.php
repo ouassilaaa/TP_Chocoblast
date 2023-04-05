@@ -33,7 +33,7 @@ class Chocoblast{
         return $this -> date_chocoblast; 
     }
 
-    public function getCible_chocoblast(){
+    public function getCibleChocoblast(){
         return $this -> cible_chocoblast;
     }
 
@@ -45,11 +45,11 @@ class Chocoblast{
          $this -> slogan = $slogan;
     }
 
-    protected function setDate_chocoblast($date_chocoblast){
+    protected function setDateChocoblast($date_chocoblast){
         return $this -> date_chocoblast =$date_chocoblast;
     }
 
-    protected function setCible_chocoblast($cible_chocoblast){
+    protected function setCibleChocoblast($cible_chocoblast){
         return $this -> cible_chocoblast= $cible_chocoblast;
     }
 

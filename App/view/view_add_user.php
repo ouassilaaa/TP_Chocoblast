@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./asset/style/style_add_user.css">
 
 
 </head>
 <body>
-
   <div class="login-box">
     <h2>Inscription &#129360</h2>
     <form>
