@@ -1,0 +1,11 @@
+#htaccess permet de redéfinir le nom de l'url lors de changement de page, nous lui indiquerons les noms d'adresse dans le router soit index.php
+
+#Activation du rewrite des URL
+RewriteEngine On
+#base du projet (emplacement à partir de la racine du serveur, nom du dossier)
+RewriteBase /Chocoblast
+#si ce n'est pas un répertoire
+RewriteCond %{REQUEST_FILENAME} !-d
+# Si ce n'est pas un fichier
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php [QSA,L]
