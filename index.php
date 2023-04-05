@@ -1,4 +1,11 @@
 <?php
+
+include"./App/model/apiUtilisateur.php"; 
+include"./App/utils/connectBdd.php";
+include"./App/manager/ManagerUtilisateur.php"; 
+include"./App/model/utilisateur.php";
+
+
 //Analyse de l'URL avec parse_url() et retourne ses composants, on récupère l'url qu'on découpe
 $url = parse_url($_SERVER['REQUEST_URI']);
 //test soit l'url a une route sinon on renvoi à la racine, ici on récupère le path soit le bout de la fin, s'il est remplie on le laisse sinon on y ajoute un /
@@ -18,6 +25,11 @@ case $path === "/Chocoblast/inscription" :
 case $path === "/Chocoblast/test":
     include './App/controler/ControlerTest.php';
     break ;
+
+case $path === "/Chocoblast/userAdd":
+     $api -> addUtilisateur(); 
+     break; 
+
 //si rien ne correspond : route -> ./App/controler/Controler404.php
 default :
     include './App/controler/Controler404.php';

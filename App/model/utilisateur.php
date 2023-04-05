@@ -1,5 +1,6 @@
 <?php
 
+
 class Utilisateur {
 
     //PROPRIETES
@@ -9,9 +10,9 @@ class Utilisateur {
     private $prenom; 
     private $mail; 
     private $password; 
-    private $image; 
-    private $statut; 
-    private $role; 
+    private $image ; 
+    private $statut=0; 
+    private $role=1; 
 
     //CONSTRUCTEUR
 
