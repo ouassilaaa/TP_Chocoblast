@@ -5,10 +5,8 @@ class Chocoblast{
 
     //PROPRIETES
 
-    private $id; 
     private $slogan; 
     private $date_chocoblast; 
-    private $statut_chocoblast; 
     private $cible_chocoblast; 
     private $auteur_chocoblast;
 
@@ -46,15 +44,15 @@ class Chocoblast{
     }
 
     protected function setDateChocoblast($date_chocoblast){
-        return $this -> date_chocoblast =$date_chocoblast;
+         $this -> date_chocoblast =$date_chocoblast;
     }
 
     protected function setCibleChocoblast($cible_chocoblast){
-        return $this -> cible_chocoblast= $cible_chocoblast;
+         $this -> cible_chocoblast= $cible_chocoblast;
     }
 
     protected function setAuteur_chocoblast($auteur_chocoblast){
-        return $this -> auteur_chocoblast= $auteur_chocoblast;
+         $this -> auteur_chocoblast= $auteur_chocoblast;
     }
 
 }
