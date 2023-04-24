@@ -1,4 +1,5 @@
 <?php
+include './App/Manager/ManagerRoles.php'; 
 
 class Roles{
 
