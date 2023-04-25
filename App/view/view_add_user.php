@@ -13,7 +13,7 @@
 <body>
   <div class="login-box">
     <h2>Inscription &#129360</h2>
-    <form>
+    <form action="" method="POST">
       <div class="user-box">
         <input type="text" name="nom_utilisateur" required="">
         <label>Nom</label>
@@ -38,15 +38,23 @@
         <input type="file" name="image_utilisateur">
     </div>
   
-      <a href="submit">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Je m'inscris
-      </a>
+    
+     
+    
+    <a href="submit">
+      <div class= "button">
+            <input class="trucc" type="submit" name="submit" value="JE M'INSCRIS">
+
+      </div>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
     </form>
   </div>
 </body>
+
+
 </html>
 

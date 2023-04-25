@@ -16,9 +16,11 @@ if(isset($_POST['submit'])){
         $mail = $_POST['mail_utilisateur'];
         $image = $_POST['image_utilisateur'];
         $password = $_POST['password_utilisateur'];
+
+        echo ('AddUser OK');
     }
     else{
-        'Erreur formulaire.'; 
+        $message = 'Erreur formulaire.'; 
     }
 
 }

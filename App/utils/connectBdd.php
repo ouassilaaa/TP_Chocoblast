@@ -1,17 +1,13 @@
 <?php
+class Connexion {
+    public function __construct() {
 
+    }
 
-class BddConnect{
-
-    
-    public static function connexion(){
-
-        //import du fichier de configuration
-        include './env.php';
-        return new PDO("mysql:host=$host;dbname=$database", $login, $password, 
-    array(\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION));
+    public static function connexion() {
+        return new PDO('mysql:host=localhost;dbname=chocoblast', 'root','',
+        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
     }
 }
-   
 ?>

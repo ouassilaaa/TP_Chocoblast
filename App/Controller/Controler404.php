@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
         'Erreur formulaire.'; 
     }
 
-}
+}else{echo('404 OK');}
 
 include './App/view/view_error_404.php';
 

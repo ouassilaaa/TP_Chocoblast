@@ -63,6 +63,8 @@ body {
   font-size: 12px;
 }
 
+
+
 .login-box form a {
   position: relative;
   display: inline-block;
@@ -91,6 +93,8 @@ body {
   position: absolute;
   display: block;
 }
+
+
 
 .login-box a span:nth-child(1) {
   top: 0;
@@ -165,4 +169,9 @@ body {
   50%,100% {
     bottom: 100%;
   }
+}
+
+.trucc{
+  border: none;
+  background-color: transparent;
 }

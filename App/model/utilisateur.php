@@ -1,7 +1,5 @@
 <?php
 
-include './App/Manager/ManagerUtilisateur.php'; 
-
 class Utilisateur {
 
     //PROPRIETES

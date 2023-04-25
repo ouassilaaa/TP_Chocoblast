@@ -1,12 +1,15 @@
 <?php
 
+include "./App/Model/Utilisateur.php"; 
+
 class ManagerUtilisateur extends Utilisateur {
 
     public function getUserByMail(){
         try {
             //récuperer le mail
-             $mail=$this ->getMail();
-             $bdd= BddConnect::connexion();
+            $mail=$this ->getMail();
+            $connexion = new Connexion();
+            $bdd = $connexion->connexion();
              //requête SELECT
              $req = $bdd->prepare('SELECT id_utilisateur, nom_utilisateur, prenom_utilisateur, image_utilisateur, password_utilisateur, mail_utilisateur, statut_utilisateur,  
              FROM utilisateur WHERE mail_utilisateur = ?');
@@ -29,8 +32,8 @@ class ManagerUtilisateur extends Utilisateur {
 
     public function insertUser(){
         try{
-            $bdd= BddConnect::connexion();
-
+            $connexion = new Connexion();
+            $bdd = $connexion->connexion();
             //récupérer des paramètres
             $nom=$this->getNom(); 
             $prenom=$this->getPrenom(); 
@@ -61,8 +64,8 @@ class ManagerUtilisateur extends Utilisateur {
 
     public function activeUser(){
         try{
-            $bdd= BddConnect::connexion();
-
+            $connexion = new Connexion();
+            $bdd = $connexion->connexion();
             //récupération des paramètres
             $id=$this->getId(); 
             //préparation de la requête

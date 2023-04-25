@@ -1,5 +1,5 @@
 <?php
-
+/*
 include"./App/model/utilisateur.php";
 include "./App/manager/ManagerUtilisateur.php"; 
 
@@ -13,5 +13,5 @@ class ApiUtilsateur extends Utilisateur {
 
 
 }
-
+*/
 ?>

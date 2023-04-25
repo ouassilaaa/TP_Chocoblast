@@ -1,11 +1,12 @@
 <?php
 
-include"./App/utils/connectBdd.php";
+//include"./App/utils/connectBdd.php";
 //function nettoyage
-include"./App/model/utilisateur.php";
-include"./App/manager/ManagerUtilisateur.php"; 
+//include"./App/model/Utilisateur.php";
+//include"./App/manager/ManagerUtilisateur.php"; 
+include"./App/Api/apiUtilisateur.php"; 
 
-
+/*$api = new ApiUtilsateur('toto','tata','yoyo','ouaoua');*/
 
 //Analyse de l'URL avec parse_url() et retourne ses composants, on récupère l'url qu'on découpe
 $url = parse_url($_SERVER['REQUEST_URI']);
@@ -28,8 +29,8 @@ case $path === "/Chocoblast/test":
     break ;
 
 case $path === "/Chocoblast/userAdd":
-     $api -> addUtilisateur(); 
-     break; 
+     $api->addUtilisateur(); 
+     break;
 
 //si rien ne correspond : route -> ./App/controler/Controler404.php
 default :
