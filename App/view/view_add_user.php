@@ -39,13 +39,8 @@
     </div>
   
     
-     
-    
     <a href="submit">
-      <div class= "button">
-            <input class="trucc" type="submit" name="submit" value="JE M'INSCRIS">
-
-      </div>
+      <input class="button" type="submit" name="submit" value="JE M'INSCRIS">
       <span></span>
       <span></span>
       <span></span>

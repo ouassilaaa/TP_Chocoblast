@@ -171,7 +171,13 @@ body {
   }
 }
 
-.trucc{
+.button{
   border: none;
   background-color: transparent;
+}
+
+.file{
+  display:flex;
+  
+  
 }
